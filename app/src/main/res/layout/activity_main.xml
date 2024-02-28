@@ -7,15 +7,27 @@
     tools:context=".MainActivity">
 
     <vn.trunglt.democustomotpview.CustomOtpView
-        android:layout_width="match_parent"
+        android:id="@+id/customOtpView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:maxLength="6"
+        android:minWidth="300dp"
+        android:minHeight="40dp"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="123456" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customOtpView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
